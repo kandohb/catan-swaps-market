@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,87 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+/* styles/globals.css */
+
+
+/* globals.css */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2.5px solid black;
+  flex-direction: column;
+  background: radial-gradient(circle, blue 5%, red);
+
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* .section1 {
+  background: radial-gradient(circle, red, orange);
+}
+
+.section2 {
+  background: linear-gradient(to right, blue, purple);
+}
+
+.section3 {
+  background: linear-gradient(to right, green, yellow);
+} */
+
+input {
+  color: black;
+}
+
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.section-labels{
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.trade-list li {
+  padding-bottom: 30px;
 }
