@@ -65,7 +65,7 @@ const Page = () => {
         </button>
       </div>
       <div className="section section2">
-        <div className="title font-bold text-5xl">Catan Swap Market</div>
+        <div className="title page-title">Catan Swap Market</div>
         <h2></h2>
         {formSubmitted && (
           <div className="text-2xl align-super px-2">

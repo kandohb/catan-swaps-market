@@ -95,6 +95,13 @@ input {
   margin-bottom: 20px;
 }
 
+
+.page-title{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .submit-container{
   display: flex;
   justify-content: center;
