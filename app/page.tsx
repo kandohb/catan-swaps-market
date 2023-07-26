@@ -68,7 +68,7 @@ const Page = () => {
         <div className="title page-title ">Catan Futures Market</div>
         <h2></h2>
         {formSubmitted && (
-          <div className="text-2xl align-super px-2">
+          <div className="text-2xl content-center py-4 px-2">
           Welcome  <a className="underline decoration-sky-500">{playerNames.player1},</a> <a className="underline decoration-sky-500">{playerNames.player2},</a> 
           <a className="underline decoration-sky-500">{playerNames.player3},</a> and <a className="underline decoration-sky-500">{playerNames.player4}</a>!<br />
           This tool helps you trade <a className="font-extrabold">future</a> resources with other players.<br /> Click Add A Trade to get started!
