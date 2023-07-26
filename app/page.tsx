@@ -65,12 +65,14 @@ const Page = () => {
         </button>
       </div>
       <div className="section section2">
-        <div className="title page-title ">Catan Swap Market</div>
+        <div className="title page-title ">Catan Futures Market</div>
         <h2></h2>
         {formSubmitted && (
           <div className="text-2xl align-super px-2">
-          Welcome  <a className="underline decoration-sky-500">{playerNames.player1},</a> <a className="underline decoration-sky-500">{playerNames.player2},</a> <a className="underline decoration-sky-500">{playerNames.player3},</a> and <a className="underline decoration-sky-500">{playerNames.player4}</a>!<br />
+          Welcome  <a className="underline decoration-sky-500">{playerNames.player1},</a> <a className="underline decoration-sky-500">{playerNames.player2},</a> 
+          <a className="underline decoration-sky-500">{playerNames.player3},</a> and <a className="underline decoration-sky-500">{playerNames.player4}</a>!<br />
           This tool helps you trade <a className="font-extrabold">future</a> resources with other players.<br /> Click Add A Trade to get started!
+          <br /> Click on the trade to mark it as completed.
           </div>
         )}
       </div>
