@@ -33,6 +33,7 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
     player3: '',
     player4: '',
   });
+  /* Comment out tile counts for now
   const resourceCounts: ResourceCounts = {
     brick: 3,
     ore: 3,
@@ -46,11 +47,12 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
       return obj;
     }, {} as ResourceTileCounts)
   );
-
+*/
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic
     console.log(playerNames);
+    /*
     console.log(resourceTileCounts);
 
     // Clear inputs
@@ -65,6 +67,7 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
       return obj;
     }, {} as ResourceTileCounts);
     setResourceTileCounts(initialResourceTileCounts);
+    */
 
     // Close modal
     setShowModal(false);
@@ -78,7 +81,7 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
     const { name, value } = e.target;
     setPlayerNames((prevNames) => ({ ...prevNames, [name]: value }));
   };
-
+/*
   const handleResourceTileChange = (e: React.ChangeEvent<HTMLInputElement>, resource: keyof ResourceTileCounts, index: number) => {
     const { value } = e.target;
     setResourceTileCounts((prevCounts) => ({
@@ -88,6 +91,7 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
       ),
     }));
   };
+  */
 
   const handleModalClose = () => {
     setShowModal(false);
@@ -136,7 +140,8 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
                 value={playerNames.player4}
                 onChange={handlePlayerNameChange}
               />
-            </div>
+            </div> 
+            {/* Comment out tile counts for now
             <div className="form-section">
               <h2 className="font-bold text-xl">Resource Tile Counts</h2>
               {Object.keys(resourceCounts).map((resource) => (
@@ -163,6 +168,7 @@ const NewGame: React.FC<NewGameProps> = ({ onPlayerNamesUpdate, onNewGame }) => 
                 </div>
               ))}
             </div>
+            */}
             <button
               type="submit"
               className="button align-middle bg-black hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
